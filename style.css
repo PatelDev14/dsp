@@ -16,14 +16,14 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/full2023.jpeg);
+    background-image: url(images/dark+computer.jpg);
     background-size: cover;
     background-position: center;
 
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 5px 5%;
 }
 /* .container img{
     padding-left: 1px;
@@ -34,7 +34,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 .logo{
     width: 140px;
@@ -48,7 +55,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: rgb(171, 7, 91);
+    color: rgb(140, 136, 193);
     text-decoration: none;
     font-size: 18px;
     /* font-weight: bold; */
@@ -59,7 +66,7 @@ nav ul li a::after{
     content:'';
     width: 0;
     height: 2px;
-    background: #08a36f;
+    background: #27a308;
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -79,21 +86,28 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    color: rgb(213, 16, 154)
+    color: rgb(208, 37, 37);
+    
+    overflow: hidden;
+    
+    font-size: 2.6rem; 
+    width: 0;
+    white-space: nowrap;
+    animation: typing 8s forwards;
 }
 .header-text p{
-    color: rgb(202, 90, 20);
+    color: rgb(129, 205, 16);
 }
 
-.header-text h1 span{
-    color:rgb(213, 16, 154)
-}
+/* .header-text h1 span{
+    color: rgb(208, 37, 37);
+} */
 
 /* ***********************About******************************** */
 
 #about{
     padding: 80px 0px;
-    color:rgb(16, 16, 213);
+    color:rgb(7, 182, 30);
 }
 
 .row{
@@ -117,7 +131,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 30px;
     font-weight: 500;
-    color: aqua;
+    color: rgb(19, 196, 196);
 }
 
 .tab-titles{
@@ -138,7 +152,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #088ca3;
+    background: #7dc9d7;
     position: absolute;
     left: 0;
     bottom: -8px;
